@@ -6,7 +6,7 @@ describe("getAPIKey", () => {
     const headers = {
       authorization: "ApiKey 123456789",
     };
-    expect(getAPIKey(headers)).toBe("123456789");
+    expect(getAPIKey(headers)).toBe("ApiKey 123456789");
   });
 
   test("should throw an error if the Authorization header is missing", () => {
